@@ -1,9 +1,10 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for,jsonify
 from forms import TodoForm 
-from models import todos
+from models import Todos
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "nininini"
+todos = Todos()
 
 @app.route("/todos/", methods=["GET", "POST"])
 def todos_list():
