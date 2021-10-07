@@ -1,0 +1,2 @@
+# 9modWTF
+podstawy WTF
